@@ -23,14 +23,14 @@ class SongList extends Component {
 
     render() {
         // this.props === { songs: state.songs }
-        // console.log(this.props);
+        // console.log(this.props); // songs(array), selectSong(function)
 
         return <div className='ui divided list'>{this.renderList()}</div>
     }
 }
 
 const mapStateToProps = state => {
-    // console.log(state);
+    // console.log(state); // songs(array), selectedSong
 
     return { songs: state.songs };
 }
